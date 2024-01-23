@@ -1,0 +1,86 @@
+body  {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Haus {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .Haus img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ItemBereich {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    height: 20vh;
+    width: calc(100% - 200px);
+  }
+  
+  .ItemBereich img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .SpielBrett {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+    position: absolute;
+    top: 20vh;
+    left: 200px;
+    height: 80vh;
+    width: calc(100% - 200px);
+    background-color: darkgreen; 
+  }
+  
+  
+  .BrettElement {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1606749482582-8c73563adc2b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .Platzierbar {
+    cursor: move;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    background-image: url('https://images.unsplash.com/photo-1605644235751-709c7254e3e3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 150%;
+    background-position: center center;
+  }
+  
+  .Pitbull {
+    width: 140px;
+    height: 140px;
+    background-color: transparent;
+    position: absolute;
+    right: -50px;
+    background-image: url('https://assets.stickpng.com/thumbs/5847f605cef1014c0b5e48a1.png');
+    background-size: 100%;
+    background-position: center center;
+  }
+
+  .Projektil {
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    background-color: teal;
+    background-image: url('https://plus.unsplash.com/premium_photo-1668790939881-01d7efaf3fa9?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 10px;
+  }
